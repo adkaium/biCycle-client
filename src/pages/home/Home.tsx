@@ -1,5 +1,7 @@
+import { Products } from "../Shop/Products"
 import { Banner } from "./Banner"
 import { Categories } from "./Categories"
+import { HeroSection } from "./HeroSection"
 
 
 export const Home = () => {
@@ -7,6 +9,8 @@ export const Home = () => {
     <>
     <Banner />
     <Categories />
+    <HeroSection />
+    <Products/>
     </>
   )
 }
