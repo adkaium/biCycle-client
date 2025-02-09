@@ -13,7 +13,7 @@ export const HeroSection = () => {
   return (
     <section className="section__container hero__container">
       {cards.map((card) => (
-        <div key={card.id} className="product__card">
+        <div key={card.id} className="hero__card">
           <img src={card.image} alt={card.title} />
           <div className="hero__content">
             <p>{card.trend}</p>
