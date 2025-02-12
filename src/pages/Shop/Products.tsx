@@ -9,12 +9,16 @@ export const Products = () => {
         setVisibleProducts((prevValue) => prevValue + 4);
     }
   return (
-    <section className='section__container product__container'>
-        <h1 className="section__header">Trending Product</h1>
-        <p className="section__subheader mb-12">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nemo neque quibusdam ratione ab, error ullam mollitia provident?</p>
+    <section className="section__container product__container">
+      <h1 className="section__header">Trending Product</h1>
+      <p className="section__subheader mb-12">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
+        nemo neque quibusdam ratione ab, error ullam mollitia provident?
+      </p>
 
-
+      <div className="mt-12">
         <ProductCard products={products} />
+      </div>
     </section>
-  )
+  );
 }
