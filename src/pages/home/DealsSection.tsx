@@ -2,7 +2,6 @@ import dealsImg from "../../assets/deals.png";
 const DealsSection = () => {
   return (
     <section className="section__container deals__container">
-      DealsSection
       <div className="deals__image">
         <img src={dealsImg} alt="" />
       </div>
@@ -15,6 +14,24 @@ const DealsSection = () => {
           perferendis autem ducimus tempore voluptate? Recusandae voluptatem non
           sequi deserunt similique?a
         </p>
+        <div className="deals__countdown flex-wrap">
+          <div className="deals__countdown__card">
+            <h4>14</h4>
+            <p>Days</p>
+          </div>
+          <div className="deals__countdown__card">
+            <h4>22</h4>
+            <p>Hours</p>
+          </div>
+          <div className="deals__countdown__card">
+            <h4>19</h4>
+            <p>Minutes</p>
+          </div>
+          <div className="deals__countdown__card">
+            <h4>05</h4>
+            <p>Seconds</p>
+          </div>
+        </div>
       </div>
     </section>
   );
