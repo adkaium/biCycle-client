@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import { ProductType } from "./productType";
+import { ProductCardProps, ProductType } from "./productType";
 import RatingStars from "../../components/RatingStars";
 
 
-export const ProductCard  = ({products}:ProductType) => {
-    console.log(products);
+export const ProductCard = ({products}: ProductCardProps) => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
       {products.map((product: ProductType, index: number) => (
@@ -25,13 +24,16 @@ export const ProductCard  = ({products}:ProductType) => {
           </div>
           <div className="product__card__content">
             <h4>{product.name}</h4>
-            <p>${product.price}{product?.oldPrice ? <s>${product?.oldPrice}</s> : null}</p>
+            <p>
+              ${product.price}
+              {product?.oldPrice ? <s>${product?.oldPrice}</s> : null}
+            </p>
             <RatingStars rating={product.rating}></RatingStars>
           </div>
         </div>
       ))}
     </div>
   );
-}
+};
 
 

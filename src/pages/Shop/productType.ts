@@ -4,12 +4,12 @@ export type ProductType = {
   category: string;
   description: string;
   price: number;
-  oldPrice: number;
+  oldPrice?: number;
   image: string;
   color: string;
   rating: number;
-  author: string;
-}
+  // author: string;
+};
 
 export type ProductCardProps = {
   products: ProductType[];
